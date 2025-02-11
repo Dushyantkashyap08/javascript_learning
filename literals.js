@@ -63,8 +63,3 @@ let mixedArray = [1, "Hello", false, { name: "Alice" }, [1, 2, 3], null]; //hold
 
 console.log(mixedArray)
 
-
-
-//spread operator : used to create an iterable from an array or a object
-const numbers = [1, 2, 3];
-console.log(...numbers);

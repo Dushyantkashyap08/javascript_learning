@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMContentLoaded Example</title>
+</head>
+<body>
+    <div id="container">
+        <p>Initial content.</p>
+    </div>
+
+    <script>
+        // Wait for the DOM to be fully loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select the container element
+            const container = document.getElementById("container");
+
+            // Create a new element
+            const newParagraph = document.createElement("p");
+            newParagraph.textContent = "This content was added dynamically!";
+
+            // Append the new element to the container
+            container.appendChild(newParagraph);
+        });
+    </script>
+</body>
+</html>
